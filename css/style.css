@@ -1,0 +1,144 @@
+:root{
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+header {
+    padding: 16px;
+    width: 100vw;
+    box-shadow: var(--shadow);
+}
+
+
+/* Toggle switch for dark mode */
+
+.dark-mode 
+{
+    background-color: #161b22;
+    color: white;
+}
+
+
+
+#dark-mode-sign 
+{
+    font-size: 1.5em;
+    margin-top: .05em;
+    margin-right: .5em;
+}
+
+
+
+
+.switch 
+{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+
+
+.switch input 
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+.slider 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(207, 204, 204);
+    transition: .4s;
+}
+
+
+
+.slider:before 
+{
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    transition: .4s
+}
+
+
+  
+input:checked + .slider:before 
+{
+    transform: translateX(26px);
+}
+
+
+
+.slider.round 
+{
+    border-radius: 34px;
+}
+
+
+  
+.slider.round:before 
+{
+    border-radius: 50%;
+}
+
+body {
+    background-color: #fafbfc;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: var(--font-heading);
+    padding-top: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 3%;
+    box-shadow: var(--shadow);
+}
+
+.sub-title {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-align: start;
+}
+
+
+article {
+    font-family: var(--font-body);
+}
+
+.date {
+    font-family: var(--font-body);
+    text-align: center;
+}
+
+.author {
+    font-family: var(--font-body);
+}
+
+
+.footer-link {
+    font-size: 25px;
+}
